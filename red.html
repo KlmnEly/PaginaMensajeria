@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>RapiEntregas</title>
+    <title>Nuestra Red</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -28,58 +28,11 @@
                 <img src="img/icono-menu.png" alt="">
             </div>
         </nav>
-
+        
     </header>
     <main>
-        <div class="banner">
-            <img src="img/banner-index.jpg" alt="">
-        </div>
-
-        <section class="consultas">
-            <span>Consultar</span>
-
-            <select id="seleccionConsulta">
-                <option value="envios">Envios</option>
-                <option value="remision">Remision</option>
-                <option value="factura">Factura Electronica</option>
-                <option value="recoleccion">Solicitud de Recoleccion</option>
-            </select>
-
-            <input type="text" id="inputSeleccion" value="" placeholder="Ingresa el # de guia">
-
-            <a href=""><img src="img/icono-enviar-consulta.png" alt=""></a>
-        </section>
-        <br><br>
-        <h1 style="text-align: center;">Conoce nuestras soluciones logísticas</h1>
-        <br>
-        <section class="soluciones-logisticas">
-            <a href="">
-                <img src="img/icono-soluciones-digitales.png" alt="">
-                <h3>Soluciones digitales</h3>
-                <p>
-                    Entregas electronicas, SMS, email masivo y mas para publicidad, legales y otros.
-                </p>
-                <span>Ver más<span> ></span></span>
-            </a>
-
-            <a href="">
-                <img src="img/icono-soluciones-transporte.png" alt="">
-                <h3>Soluciones de Transporte y Entrega</h3>
-                <p>
-                    Recogemos en tu puerta y entregamos en el tiiempo que requieras.
-                </p>
-                <span>Ver más<span> ></span></span>
-            </a>
-
-            <a href="">
-                <img src="img/icono-soluciones-logisticas.png" alt="">
-                <h3>Soluciones Logísticas Eficientes</h3>
-                <p>
-                    Optimizamos tu logistica para campañas y tu almacenamiento
-                </p>
-                <span>Ver más<span> ></span></span>
-            </a>
-        </section>
+        <h3>Nuestra red de centro de soluciones</h3>
+        <div id="map"></div>
     </main>
     <footer>
         <section>
@@ -137,7 +90,9 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
 
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD89XxwCltW31AWIMyioItw88e706oSsHs&libraries=places&callback=initMap"></script>
     <script src="js/main.js"></script>
 </body>
 
 </html>
+

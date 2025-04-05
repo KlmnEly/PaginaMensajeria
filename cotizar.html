@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>RapiEntregas</title>
+    <title>Rastreo Envios</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/cotizar.css">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 
@@ -31,54 +31,26 @@
 
     </header>
     <main>
-        <div class="banner">
-            <img src="img/banner-index.jpg" alt="">
-        </div>
+        <section class="cotizacion">
+            <form action="">
+                <div class="encabezado-form">
+                    <h4>Paquetes</h4>
+                <img src="img/icono-cajas.png" alt="">
+                </div>
+                
 
-        <section class="consultas">
-            <span>Consultar</span>
+                <input type="text" placeholder="Ciudad de origen">
+                <input type="text" placeholder="Ciudad de destino">
+                <input type="text" placeholder="Peso Maximo: 2kg">
+                <input type="text" placeholder="Valor declarado minimo: 5000">
 
-            <select id="seleccionConsulta">
-                <option value="envios">Envios</option>
-                <option value="remision">Remision</option>
-                <option value="factura">Factura Electronica</option>
-                <option value="recoleccion">Solicitud de Recoleccion</option>
-            </select>
+                <button>Cotizar envio</button>
 
-            <input type="text" id="inputSeleccion" value="" placeholder="Ingresa el # de guia">
+                
 
-            <a href=""><img src="img/icono-enviar-consulta.png" alt=""></a>
-        </section>
-        <br><br>
-        <h1 style="text-align: center;">Conoce nuestras soluciones logísticas</h1>
-        <br>
-        <section class="soluciones-logisticas">
-            <a href="">
-                <img src="img/icono-soluciones-digitales.png" alt="">
-                <h3>Soluciones digitales</h3>
-                <p>
-                    Entregas electronicas, SMS, email masivo y mas para publicidad, legales y otros.
-                </p>
-                <span>Ver más<span> ></span></span>
-            </a>
+                
 
-            <a href="">
-                <img src="img/icono-soluciones-transporte.png" alt="">
-                <h3>Soluciones de Transporte y Entrega</h3>
-                <p>
-                    Recogemos en tu puerta y entregamos en el tiiempo que requieras.
-                </p>
-                <span>Ver más<span> ></span></span>
-            </a>
-
-            <a href="">
-                <img src="img/icono-soluciones-logisticas.png" alt="">
-                <h3>Soluciones Logísticas Eficientes</h3>
-                <p>
-                    Optimizamos tu logistica para campañas y tu almacenamiento
-                </p>
-                <span>Ver más<span> ></span></span>
-            </a>
+            </form>
         </section>
     </main>
     <footer>
