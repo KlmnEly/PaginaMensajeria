@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(232, 226, 226);
+
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background: blanchedalmond;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links li {
+    padding-top: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: brown;
+
+    &:hover {
+        color: black;
+    }
+}
+
+nav img {
+    height: 50px;
+    width: 100px;
+}
+
+.menu {
+    display: none;
+    cursor: pointer;
+    width: 12%;
+}
+
+.menu img {
+    width: 100%;
+}
+
+.banner {
+    width: 90%;
+    margin: 0 auto;
+    height: 50vh;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.consultas {
+    display: flex;
+    gap: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    margin-top: -25px;
+    border-radius: 30px;
+    background: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.consultas span,
+.consultas select,
+.consultas input {
+    width: 30%;
+    font-size: 14px;
+    text-align: center;
+    border: none;
+}
+
+.consultas select {
+    height: 100%;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.consultas input {
+    height: 100%;
+    margin-right: 0px;
+}
+
+.consultas span {
+    font-weight: bold;
+}
+
+.consultas a {
+    width: 5%;
+    height: 80%;
+    margin-right: 2%;
+    margin-left: 0px;
+    background: red;
+    border-radius: 50%;
+    padding: 5px;
+    padding-top: 5px;
+    padding-left: 8px;
+    text-align: center;
+
+    &:hover {
+        cursor: pointer;
+        opacity: .7;
+    }
+}
+
+.consultas a img {
+    width: 80%;
+    height: 80%;
+    
+}
+
+
+.soluciones-logisticas {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.soluciones-logisticas a {
+    width: 30%;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-decoration: none;
+    color:  black;
+    background: white;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    padding: 10px;
+    transition: 1s;
+
+    &:hover {
+        scale: 1.05;
+    }
+}
+
+.soluciones-logisticas p {
+    font-size: 14px;
+}
+
+.soluciones-logisticas img {
+    width: 50px;
+}
+
+.soluciones-logisticas h3 {
+    font-weight: bold;
+    transition: .5s;
+}
+
+.soluciones-logisticas span {
+    color: brown;
+    font-weight: 700;
+    transition: .5s;
+}
+
+.soluciones-logisticas a:hover h3, 
+.soluciones-logisticas a:hover span {
+    color: rgb(216, 122, 34);
+}
+
+.soluciones-logisticas a:hover span span {
+    margin-left: 5px;
+    transition: .5s;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 12px;
+    padding: 20px;
+    background: blanchedalmond;
+}
+
+footer section {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+footer span:hover {
+    cursor: pointer;
+    color: brown;
+}
+
+footer img {
+    width: 120px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+footer h3 {
+    font-size: 15px;
+}
+
+footer p {
+    margin: 0;
+    color: brown;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+@media (max-width: 720px) {
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 10;
+        background: lightgray;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .consultas {
+        height: 300px;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        position: initial;
+        left: initial;
+        transform: none;
+    }
+
+    .consultas select,
+    .consultas span,
+    .consultas input,
+    .consultas a {
+        width: 90%;
+        height: 20%;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+
+    .consultas a {
+        width: 10%;
+    }
+
+    .soluciones-logisticas {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .soluciones-logisticas a {
+        width: 100%;
+
+    }
+
+    footer p,
+    footer h3 {
+        font-size: 11px;
+    }
+
+    footer span {
+        font-size: 9px;
+    }
+
+    footer img {
+        width: 60px;
+    }
+}
